@@ -1,0 +1,88 @@
+.container {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f1f1;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Lista de filme modernizată folosind grid */
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flexibilitate pentru ecrane mici și mari */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Stilizare pentru fiecare item din listă */
+.movieItem {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movieItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Link-ul pentru fiecare film */
+a {
+    color: #0a2e55;
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Loader pentru încărcare */
+.loader {
+    font-size: 1.5rem;
+    color: #007bff;
+    text-align: center;
+}
+
+/* Buton pentru acțiuni pe home */
+.homeButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.homeButton:hover {
+    background-color: #0056b3;
+}
+
+/* Mesaj pentru lipsa filmelor */
+.noMovies {
+    font-size: 1.2rem;
+    color: #777;
+    text-align: center;
+}

@@ -1,0 +1,63 @@
+/* Reviews.module.css */
+.reviewsContainer {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .reviewsList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .reviewItem {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .reviewItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .reviewHeader {
+    margin-bottom: 15px;
+  }
+  
+  .author {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin: 0;
+  }
+  
+  .content {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  .noReviews {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #777;
+    padding: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+}

@@ -1,0 +1,71 @@
+/* Cast.module.css */
+.castContainer {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .castList {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center; /* Centrarea elementelor pe axa orizontală */
+    align-items: center;   /* Centrarea elementelor pe axa verticală */
+  }
+  
+  
+  .castItem {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .castItem:hover {
+    transform: translateY(-5px);
+  }
+  
+  .actorImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .placeholderImage {
+    width: 100%;
+    height: 300px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-size: 1rem;
+  }
+  
+  .actorInfo {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .actorName {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .actorCharacter {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 5px 0 0;
+  }

@@ -1,0 +1,36 @@
+/* components/Header.module.css */
+.header {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center; /* Aliniază butoanele pe orizontală, la centru */
+    align-items: center; /* Aliniază butoanele vertical */
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Distanță mică între butoane */
+  }
+  
+  .navItem {
+    font-size: 16px;
+  }
+  
+  .navLink {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px; /* Un pic de padding pentru butoane */
+    border-radius: 5px; /* Colțuri rotunjite pentru butoane */
+    transition: background-color 0.3s ease; /* Tranziție la hover */
+  }
+  
+  .navLink:hover {
+    background-color: #555; /* Culoare la hover */
+  }
+  
