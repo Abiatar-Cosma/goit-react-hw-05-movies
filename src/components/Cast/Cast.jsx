@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import { getMovieCredits } from '../../services/api';
 import styles from './Cast.module.css';
 
@@ -39,18 +38,6 @@ const Cast = () => {
         </ul>
       </div>
     );
-  };
-  
-  Cast.propTypes = {
-    movieId: PropTypes.string.isRequired, // movieId este un string și este obligatoriu
-    cast: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.number.isRequired,
-        name: PropTypes.string.isRequired,
-        character: PropTypes.string.isRequired,
-        profile_path: PropTypes.string,
-      })
-    ).isRequired, // cast este un array de obiecte cu structura specificată
   };
   
   export default Cast;

@@ -3,7 +3,13 @@ import { Link, useLocation } from 'react-router-dom';
 import styles from './MovieList.module.css';
 
 const MovieList = ({ movies }) => {
-  const location = useLocation(); // Păstrează locația pentru navigare corectă
+  const location = useLocation();
+
+  // Verifică dacă `movies` este un array valid
+  if (!Array.isArray(movies)) {
+    console.error('Invalid movies array');
+    return null;
+  }
 
   return (
     <ul className={styles.movieList}>
@@ -18,10 +24,13 @@ const MovieList = ({ movies }) => {
   );
 };
 
-MovieItem.propTypes = {
-  id: PropTypes.number.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string,
+MovieList.propTypes = {
+  movies: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
-export default MovieItem;
+export default MovieList;

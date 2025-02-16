@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { searchMovies } from "../services/api";
 import MovieList from "../components/MovieList/MovieList";
-import styles from './Movies.module.css';
 
 const Movies = () => {
   const [query, setQuery] = useState("");
